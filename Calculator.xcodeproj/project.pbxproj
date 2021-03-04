@@ -30,6 +30,7 @@
 		2763C8C625E6CAE100314E8B /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
 		2763C8C925E6D04B00314E8B /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		27869F2825E7F59500ACEA14 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		EF5E8FB425F1567500798AC4 /* BowlingKata.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BowlingKata.playground; path = ../../../Desktop/AleixPrograMovils/BowlingKata.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		2763C8A425E6B87600314E8B = {
 			isa = PBXGroup;
 			children = (
+				EF5E8FB425F1567500798AC4 /* BowlingKata.playground */,
 				2763C8AF25E6B87700314E8B /* Calculator */,
 				2763C8AE25E6B87700314E8B /* Products */,
 			);
