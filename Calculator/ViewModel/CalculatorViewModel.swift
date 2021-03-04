@@ -32,7 +32,7 @@ class CalculatorViewModel: CalculatorViewModelProtocol,
     @Published var buttonText: String = "AC"
     
     private var operation: Calculation = Calculation(firstOperator: 0,
-                                                     secondOperator: 0,
+                                                     secondOperator: nil,
                                                      operation: .none)
     private var operationFinished: Bool = false
     
@@ -41,6 +41,15 @@ class CalculatorViewModel: CalculatorViewModelProtocol,
             self.operation.secondOperator = 0
             self.display = digit
             self.buttonText = "C"
+            return
+        }
+        
+        if(operationFinished)
+        {
+            self.operation.secondOperator = 0
+            self.display = digit
+            self.buttonText = "C"
+            return
         }
         
         guard self.display != "0" else {
@@ -86,12 +95,9 @@ class CalculatorViewModel: CalculatorViewModelProtocol,
             self.operation.operation = operation
         }
         
-        //self.display = "0"
-        //self.buttonText = "AC"
     }
     
     func calculateResult(for values: Calculation) -> Int? {
-        self.buttonText = "AC"
         guard let secondOperator = values.secondOperator else { return nil }
         switch values.operation {
         case .addition:
